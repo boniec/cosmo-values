@@ -46,10 +46,10 @@ const INITIAL_DATA = [
     { name: "Evil Snowman", category: "Percentage", demand: "High 8/10", val: "120", valG: "550", valR: "700", img: "images/Evil Snowman.png", updated: "12/26/2025" },
     { name: "Gilded Seraphim", category: "Secrets", demand: "Very High 10/10", val: "1,350", valG: "O/C", valR: "O/C", img: "images/Gilded Seraphim.png", updated: "12/26/2025" },
     { name: "Ornament", category: "Legendary", demand: "High 8/10", val: "0.2", valG: "0.4", valR: "0.7", img: "images/Ornament.png", updated: "12/26/2025" },
-    { name: "Nutcracker", category: "Mythical", demand: "Very High 10/10", val: "4", valG: "8", valR: "13", img: "images/Nutcracker.png", updated: "12/26/2025" },
+    { name: "Nutcracker", category: "Mythical", demand: "Very High 10/10", val: "2", valG: "5.5", valR: "10", img: "images/Nutcracker.png", updated: "12/26/2025" },
     { name: "Frost Spirit", category: "Secrets", demand: "High 8/10", val: "75", valG: "180", valR: "215", img: "images/Frost Spirit.png", updated: "12/26/2025" },
     { name: "Christmas Tree", category: "Secrets", demand: "High 8/10", val: "175", valG: "365", valR: "410", img: "images/Christmas Tree.png", updated: "12/26/2025" },
-    { name: "Sharkie", category: "Mythical", demand: "Low 4/10", val: "4", valG: "8", valR: "12", img: "images/Sharkie.png", updated: "12/26/2025" },
+    { name: "Sharkie", category: "Mythical", demand: "Low 4/10", val: "2", valG: "5.5", valR: "10", img: "images/Sharkie.png", updated: "12/26/2025" },
     { name: "5m Frost Monarch", category: "Limited", demand: "Medium 5/10", val: "1,350", valG: "4,900", valR: "5,100", img: "images/5m Frost Monarch.png", updated: "12/26/2025" },
     { name: "5m North Star", category: "Limited", demand: "Low 4/10", val: "200", valG: "450", valR: "550", img: "images/5m North Star.png", updated: "12/26/2025" },
     { name: "Archangel", category: "Mythical", demand: "Very Low 0/10", val: "1", valG: "2", valR: "4", img: "images/Archangel.png", updated: "12/25/2025" },
@@ -229,4 +229,5 @@ document.addEventListener('DOMContentLoaded', () => {
     updateStaticTexts();
     render();
 });
+
 
