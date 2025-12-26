@@ -1,3 +1,4 @@
+// 1. DATA & TRANSLATIONS
 const translations = {
     en: { search: "Search pet...", demand: "Demand", normal: "Normal", golden: "Golden", rainbow: "Rainbow", updated: "Updated" },
     pl: { search: "Szukaj peta...", demand: "Popyt", normal: "Normalny", golden: "Złoty", rainbow: "Tęczowy", updated: "Aktualizacja" },
@@ -7,50 +8,50 @@ const translations = {
 };
 
 const INITIAL_DATA = [
-    { name: "Krampus", category: "Secrets", demand: "8/10", val: "2,300", img: "images/Krampus.png", updated: "12/26/2025" },
-    { name: "Evil Snowman", category: "Secrets", demand: "8/10", val: "120", img: "images/Evil Snowman.png", updated: "12/26/2025" },
-    { name: "Gilded Seraphim", category: "Legendary", demand: "10/10", val: "1,350", img: "images/Gilded Seraphim.png", updated: "12/26/2025" },
-    { name: "Ornament", category: "Mythical", demand: "8/10", val: "0.2", img: "images/Ornament.png", updated: "12/26/2025" },
-    { name: "Nutcracker", category: "Secrets", demand: "10/10", val: "4", img: "images/Nutcracker.png", updated: "12/26/2025" },
-    { name: "Frost Spirit", category: "Secrets", demand: "8/10", val: "75", img: "images/Frost Spirit.png", updated: "12/26/2025" },
-    { name: "Christmas Tree", category: "Mythical", demand: "8/10", val: "175", img: "images/Christmas Tree.png", updated: "12/26/2025" },
-    { name: "Sharkie", category: "Limited", demand: "4/10", val: "4", img: "images/Sharkie.png", updated: "12/26/2025" },
-    { name: "5m Frost Monarch", category: "Limited", demand: "5/10", val: "1,350", img: "images/5m Frost Monarch.png", updated: "12/26/2025" },
-    { name: "5m North Star", category: "Mythical", demand: "4/10", val: "200", img: "images/5m North Star.png", updated: "12/26/2025" },
-    { name: "Archangel", category: "Mythical", demand: "0/10", val: "1", img: "images/Archangel.png", updated: "12/25/2025" },
-    { name: "BubbleGum Chaos", category: "Secrets", demand: "2/10", val: "0.1", img: "images/BubbleGum Chaos.png", updated: "12/25/2025" },
-    { name: "Candy God", category: "Secrets", demand: "3/10", val: "55", img: "images/Candy God.png", updated: "12/26/2025" },
-    { name: "Chocolate Marauder", category: "Percentage", demand: "3/10", val: "340", img: "images/Chocolate Marauder.png", updated: "12/26/2025" },
-    { name: "Chronos", category: "Leaderboard", demand: "8/10", val: "9,500", img: "images/Chronos.png", updated: "12/26/2025" },
-    { name: "Divine Celestia", category: "Secrets", demand: "10/10", val: "12,000", img: "images/Divine Celestia.png", updated: "12/26/2025" },
-    { name: "Divine Dragon", category: "Secrets", demand: "3/10", val: "30", img: "images/Divine Dragon.png", updated: "12/26/2025" },
-    { name: "Frost Queen", category: "Limited", demand: "4/10", val: "65", img: "images/Frost Queen.png", updated: "12/26/2025" },
-    { name: "Frosty Snowman", category: "Limited", demand: "9/10", val: "180", img: "images/Frosty Snowman.png", updated: "12/26/2025" },
-    { name: "Gingerbread Dragon", category: "Percentage", demand: "4/10", val: "2", img: "images/Gingerbread Dragon.png", updated: "12/26/2025" },
-    { name: "Kairos", category: "Mythical", demand: "6/10", val: "115", img: "images/Kairos.png", updated: "12/26/2025" },
-    { name: "King Emblazed", category: "Secrets", demand: "1/10", val: "0.1", img: "images/King Emblazed.png", updated: "12/26/2025" },
-    { name: "King Kraken", category: "Secrets", demand: "6/10", val: "400", img: "images/King Kraken.png", updated: "12/26/2025" },
-    { name: "Magmasaur", category: "Secrets", demand: "4/10", val: "50", img: "images/Magmasaur.png", updated: "12/26/2025" },
-    { name: "Orca Dominator", category: "Percentage", demand: "4/10", val: "55", img: "images/Orca Dominator.png", updated: "12/26/2025" },
-    { name: "Paradox", category: "Secrets", demand: "7/10", val: "170", img: "images/Paradox.png", updated: "12/26/2025" },
-    { name: "Raging Claw", category: "Secrets", demand: "2/10", val: "70", img: "images/Raging Claw.png", updated: "12/26/2025" },
-    { name: "Sakura Dominator", category: "Mythical", demand: "3/10", val: "75", img: "images/Sakura Dominator.png", updated: "12/26/2025" },
-    { name: "Sakura Queen", category: "Mythical", demand: "0/10", val: "0.1", img: "images/Sakura Queen.png", updated: "12/26/2025" },
-    { name: "Samureye", category: "Leaderboard", demand: "0/10", val: "0.1", img: "images/Samureye.png", updated: "12/26/2025" },
-    { name: "Silver Emperor", category: "Percentage", demand: "8/10", val: "1,050", img: "images/Silver Emperor.png", updated: "12/26/2025" },
-    { name: "Social Dragon", category: "Leaderboard", demand: "5/10", val: "14", img: "images/Social Dragon.png", updated: "12/26/2025" },
-    { name: "Trophy Guardian", category: "Secrets", demand: "8/10", val: "550", img: "images/Trophy Guardian.png", updated: "12/26/2025" },
-    { name: "Weeping Angel", category: "Secrets", demand: "2/10", val: "45", img: "images/Weeping Angel.png", updated: "12/26/2025" }
+    { name: "Krampus", category: "Percentage", demand: "High 8/10", val: "2,300", valG: "7,500", valR: "8,000", img: "images/Krampus.png", updated: "12/26/2025" },
+    { name: "Evil Snowman", category: "Secrets", demand: "High 8/10", val: "120", valG: "550", valR: "700", img: "images/Evil Snowman.png", updated: "12/26/2025" },
+    { name: "Gilded Seraphim", category: "Legendary", demand: "Very High 10/10", val: "1,350", valG: "O/C", valR: "O/C", img: "images/Gilded Seraphim.png", updated: "12/26/2025" },
+    { name: "Ornament", category: "Mythical", demand: "High 8/10", val: "0.2", valG: "0.4", valR: "0.7", img: "images/Ornament.png", updated: "12/26/2025" },
+    { name: "Nutcracker", category: "Secrets", demand: "Very High 10/10", val: "4", valG: "8", valR: "13", img: "images/Nutcracker.png", updated: "12/26/2025" },
+    { name: "Frost Spirit", category: "Secrets", demand: "High 8/10", val: "75", valG: "180", valR: "215", img: "images/Frost Spirit.png", updated: "12/26/2025" },
+    { name: "Christmas Tree", category: "Mythical", demand: "High 8/10", val: "175", valG: "365", valR: "410", img: "images/Christmas Tree.png", updated: "12/26/2025" },
+    { name: "Sharkie", category: "Limited", demand: "Low 4/10", val: "4", valG: "8", valR: "12", img: "images/Sharkie.png", updated: "12/26/2025" },
+    { name: "5m Frost Monarch", category: "Limited", demand: "Medium 5/10", val: "1,350", valG: "4,900", valR: "5,100", img: "images/5m Frost Monarch.png", updated: "12/26/2025" },
+    { name: "5m North Star", category: "Mythical", demand: "Low 4/10", val: "200", valG: "450", valR: "550", img: "images/5m North Star.png", updated: "12/26/2025" },
+    { name: "Archangel", category: "Mythical", demand: "Very Low 0/10", val: "1", valG: "2", valR: "4", img: "images/Archangel.png", updated: "12/25/2025" },
+    { name: "BubbleGum Chaos", category: "Secrets", demand: "Very Low 2/10", val: "0.1", valG: "0.2", valR: "0.5", img: "images/BubbleGum Chaos.png", updated: "12/25/2025" },
+    { name: "Candy God", category: "Secrets", demand: "Low 3/10", val: "55", valG: "125", valR: "220", img: "images/Candy God.png", updated: "12/26/2025" },
+    { name: "Chocolate Marauder", category: "Percentage", demand: "Low 3/10", val: "340", valG: "560", valR: "780", img: "images/Chocolate Marauder.png", updated: "12/26/2025" },
+    { name: "Chronos", category: "Leaderboard", demand: "High 8/10", val: "9,500", valG: "32,500", valR: "35,000", img: "images/Chronos.png", updated: "12/26/2025" },
+    { name: "Divine Celestia", category: "Secrets", demand: "Very High 10/10", val: "12,000", valG: "50,000", valR: "52,000", img: "images/Divine Celestia.png", updated: "12/26/2025" },
+    { name: "Divine Dragon", category: "Secrets", demand: "Low 3/10", val: "30", valG: "75", valR: "90", img: "images/Divine Dragon.png", updated: "12/26/2025" },
+    { name: "Frost Queen", category: "Limited", demand: "Low 4/10", val: "65", valG: "85", valR: "100", img: "images/Frost Queen.png", updated: "12/26/2025" },
+    { name: "Frosty Snowman", category: "Limited", demand: "Very High 9/10", val: "180", valG: "700", valR: "810", img: "images/Frosty Snowman.png", updated: "12/26/2025" },
+    { name: "Gingerbread Dragon", category: "Percentage", demand: "Low 4/10", val: "2", valG: "4", valR: "7.5", img: "images/Gingerbread Dragon.png", updated: "12/26/2025" },
+    { name: "Kairos", category: "Mythical", demand: "Medium 6/10", val: "115", valG: "180", valR: "240", img: "images/Kairos.png", updated: "12/26/2025" },
+    { name: "King Emblazed", category: "Secrets", demand: "Very Low 1/10", val: "0.1", valG: "0.2", valR: "0.3", img: "images/King Emblazed.png", updated: "12/26/2025" },
+    { name: "King Kraken", category: "Secrets", demand: "Medium 6/10", val: "400", valG: "2,250", valR: "2,450", img: "images/King Kraken.png", updated: "12/26/2025" },
+    { name: "Magmasaur", category: "Secrets", demand: "Low 4/10", val: "50", valG: "95", valR: "125", img: "images/Magmasaur.png", updated: "12/26/2025" },
+    { name: "Orca Dominator", category: "Percentage", demand: "Low 4/10", val: "55", valG: "150", valR: "165", img: "images/Orca Dominator.png", updated: "12/26/2025" },
+    { name: "Paradox", category: "Secrets", demand: "High 7/10", val: "170", valG: "450", valR: "550", img: "images/Paradox.png", updated: "12/26/2025" },
+    { name: "Raging Claw", category: "Secrets", demand: "Very Low 2/10", val: "70", valG: "230", valR: "270", img: "images/Raging Claw.png", updated: "12/26/2025" },
+    { name: "Sakura Dominator", category: "Mythical", demand: "Low 3/10", val: "75", valG: "170", valR: "200", img: "images/Sakura Dominator.png", updated: "12/26/2025" },
+    { name: "Sakura Queen", category: "Mythical", demand: "Very Low 0/10", val: "0.1", valG: "0.25", valR: "0.3", img: "images/Sakura Queen.png", updated: "12/26/2025" },
+    { name: "Samureye", category: "Leaderboard", demand: "Very Low 0/10", val: "0.1", valG: "0.2", valR: "0.25", img: "images/Samureye.png", updated: "12/26/2025" },
+    { name: "Silver Emperor", category: "Percentage", demand: "High 8/10", val: "1,050", valG: "2,750", valR: "3,050", img: "images/Silver Emperor.png", updated: "12/26/2025" },
+    { name: "Social Dragon", category: "Leaderboard", demand: "Medium 5/10", val: "14", valG: "55", valR: "85", img: "images/Social Dragon.png", updated: "12/26/2025" },
+    { name: "Trophy Guardian", category: "Secrets", demand: "High 8/10", val: "550", valG: "1,950", valR: "2,050", img: "images/Trophy Guardian.png", updated: "12/26/2025" },
+    { name: "Weeping Angel", category: "Secrets", demand: "Very Low 2/10", val: "45", valG: "95", valR: "115", img: "images/Weeping Angel.png", updated: "12/26/2025" }
 ];
 
+// 2. CORE LOGIC
 let currentLang = 'en';
 let currentCategory = 'Home';
 let calcItems = [];
 let pets = INITIAL_DATA;
 
 const parseVal = (v) => {
-    if (!v) return 0;
-    if (v.toString().toUpperCase() === "O/C") return 999999999;
+    if (!v || v.toString().toUpperCase() === "O/C") return 0;
     return parseFloat(v.toString().replace(/,/g, '')) || 0;
 };
 
@@ -58,7 +59,7 @@ const formatVal = (v) => {
     if (v >= 1000000) return (v / 1000000).toFixed(2) + "M";
     if (v >= 1000) return (v / 1000).toFixed(1) + "K";
     return v.toLocaleString();
-}
+};
 
 function changeLanguage() {
     currentLang = document.getElementById('langSelect').value;
@@ -87,44 +88,48 @@ function render() {
 
     if (sort === "valHigh") filtered.sort((a, b) => parseVal(b.val) - parseVal(a.val));
     if (sort === "valLow") filtered.sort((a, b) => parseVal(a.val) - parseVal(b.val));
-    if (sort === "demandHigh") filtered.sort((a, b) => parseInt(b.demand) - parseInt(a.demand));
+    if (sort === "demandHigh") filtered.sort((a, b) => parseInt(b.demand.split('/').pop()) - parseInt(a.demand.split('/').pop()));
 
     filtered.forEach(p => {
-        const n = parseVal(p.val);
-        const g = n >= 999999 ? p.val : (n * 5).toLocaleString();
-        const r = n >= 999999 ? p.val : (n * 25).toLocaleString();
-
         grid.innerHTML += `
             <div class="glass p-5 rounded-2xl pet-card flex flex-col transition border-t-2 border-blue-500/50">
-                <div class="h-32 flex items-center justify-center bg-blue-900/10 rounded-xl mb-4 p-2">
+                <div class="h-32 flex items-center justify-center bg-blue-900/10 rounded-xl mb-4 p-2 relative">
                     <img src="${p.img}" class="max-h-full drop-shadow-2xl" onerror="this.src='https://via.placeholder.com/100?text=PET'">
+                    <span class="absolute top-2 right-2 text-[8px] bg-blue-600/30 px-2 py-0.5 rounded text-blue-300 font-bold uppercase tracking-widest">${p.category}</span>
                 </div>
-                <div class="flex justify-between items-start mb-1">
-                    <h3 class="orbitron text-md font-bold text-white">${p.name}</h3>
-                    <span class="text-[8px] bg-blue-600/20 px-2 py-0.5 rounded text-blue-400 font-bold uppercase">${p.category}</span>
-                </div>
+                <h3 class="orbitron text-md font-bold text-white mb-1">${p.name}</h3>
                 <div class="text-[9px] text-slate-400 font-bold mb-4 uppercase tracking-wider">${t.demand}: <span class="text-blue-400">${p.demand}</span></div>
                 
                 <div class="space-y-2 mb-4">
-                    <button onclick="addToCalc('${p.name}', '${p.val}', 'Normal')" class="w-full flex justify-between items-center bg-white/5 p-2 rounded-lg hover:bg-blue-600/20 transition group">
-                        <span class="text-[10px] text-slate-400 uppercase">${t.normal}</span>
+                    <button onclick="addToCalc('${p.name}', '${p.val}', 'Normal')" class="w-full flex justify-between items-center bg-white/5 p-2 rounded-lg hover:bg-blue-600/20 transition group border border-transparent hover:border-blue-500/50">
+                        <span class="text-[10px] text-slate-400 uppercase flex items-center gap-1">
+                            <span class="text-blue-500 font-bold text-lg">+</span> ${t.normal}
+                        </span>
                         <span class="text-sm font-bold text-white group-hover:text-blue-400">${p.val}</span>
                     </button>
-                    <button onclick="addToCalc('${p.name}', '${g}', 'Golden')" class="w-full flex justify-between items-center bg-white/5 p-2 rounded-lg hover:bg-yellow-600/20 transition group text-yellow-500">
-                        <span class="text-[10px] uppercase opacity-70 italic">${t.golden}</span>
-                        <span class="text-sm font-bold group-hover:text-yellow-400">${g}</span>
+
+                    <button onclick="addToCalc('${p.name}', '${p.valG}', 'Golden')" class="w-full flex justify-between items-center bg-white/5 p-2 rounded-lg hover:bg-yellow-600/20 transition group border border-transparent hover:border-yellow-500/50 text-yellow-500">
+                        <span class="text-[10px] uppercase opacity-70 italic flex items-center gap-1">
+                            <span class="text-yellow-500 font-bold text-lg">+</span> ${t.golden}
+                        </span>
+                        <span class="text-sm font-bold group-hover:text-yellow-400">${p.valG}</span>
                     </button>
-                    <button onclick="addToCalc('${p.name}', '${r}', 'Rainbow')" class="w-full flex justify-between items-center bg-white/5 p-2 rounded-lg hover:bg-pink-600/20 transition group text-pink-500">
-                        <span class="text-[10px] uppercase opacity-70 italic">${t.rainbow}</span>
-                        <span class="text-sm font-bold group-hover:text-pink-400">${r}</span>
+
+                    <button onclick="addToCalc('${p.name}', '${p.valR}', 'Rainbow')" class="w-full flex justify-between items-center bg-white/5 p-2 rounded-lg hover:bg-pink-600/20 transition group border border-transparent hover:border-pink-500/50 text-pink-500">
+                        <span class="text-[10px] uppercase opacity-70 italic flex items-center gap-1">
+                            <span class="text-pink-500 font-bold text-lg">+</span> ${t.rainbow}
+                        </span>
+                        <span class="text-sm font-bold group-hover:text-pink-400">${p.valR}</span>
                     </button>
                 </div>
-                <div class="mt-auto text-[8px] text-slate-600 uppercase font-bold tracking-widest">${t.updated}: ${p.updated}</div>
+                <div class="mt-auto text-[8px] text-slate-600 uppercase font-bold tracking-widest text-center">${t.updated}: ${p.updated}</div>
             </div>`;
     });
 }
 
+// 3. CALCULATOR LOGIC
 function addToCalc(name, val, type) {
+    if(val === "O/C") return; // Nie dodawaj nieznanych cen
     calcItems.push({ name, val, type });
     updateCalc();
 }
@@ -161,20 +166,13 @@ function updateCalc() {
                 </div>
                 <div class="flex items-center gap-2">
                     <span class="font-bold text-blue-400">${item.val}</span>
-                    <button onclick="removeFromCalc(${idx})" class="text-red-500 hover:text-red-400 text-lg">&times;</button>
+                    <button onclick="removeFromCalc(${idx})" class="text-red-500 hover:text-red-400 text-xl leading-none">&times;</button>
                 </div>
             </div>`;
     });
     totalEl.innerText = formatVal(total);
 }
 
-setInterval(() => {
-    document.getElementById('userCount').innerText = Math.floor(Math.random() * 5) + 12;
-}, 6000);
-
-function adminAuth() { if(prompt("Pass:") === "cosmo123") alert("Admin Access Granted (Demo Mode)"); }
-
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('userCount').innerText = "14";
     render();
 });
