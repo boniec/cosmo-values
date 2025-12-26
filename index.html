@@ -14,12 +14,6 @@
     <meta property="og:description" content="The best Tap Simulator Value List">
     <meta property="og:image" content="https://boniec.github.io/cosmovalues/images/logo.png">
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://boniec.github.io/cosmovalues/">
-    <meta property="twitter:title" content="Cosmo Values">
-    <meta property="twitter:description" content="The best Tap Simulator Value List">
-    <meta property="twitter:image" content="https://boniec.github.io/cosmovalues/images/logo.png">
-
     <meta name="theme-color" content="#3b82f6">
     <link rel="icon" type="image/png" href="images/logo.png">
 
@@ -41,17 +35,17 @@
 <body class="p-4 md:p-8">
 
     <header class="max-w-7xl mx-auto mb-10">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-8 text-center md:text-left">
             <div>
                 <h1 class="orbitron text-4xl font-bold text-blue-500 tracking-tighter uppercase italic">Cosmo <span class="text-white">Values</span></h1>
-                <p data-t="subheading" class="text-blue-400/60 text-[10px] tracking-[0.4em] uppercase mt-1 font-bold italic text-center md:text-left">The Best Tap Sim Value</p>
+                <p class="text-blue-400/60 text-[10px] tracking-[0.4em] uppercase mt-1 font-bold italic">The Best Tap Sim Value</p>
             </div>
             
             <div class="flex flex-wrap justify-center gap-3">
                 <div class="flex items-center gap-2 glass px-4 py-2 rounded-2xl">
                     <span class="text-[10px] font-bold text-blue-400 uppercase">Lang:</span>
                     <select id="langSelect" onchange="changeLanguage()" class="bg-transparent text-xs font-bold outline-none cursor-pointer text-white">
-                        <option value="en" class="bg-slate-900">EN 🇺🇸</option>
+                        <option value="en" class="bg-slate-900" selected>EN 🇺🇸</option>
                         <option value="pl" class="bg-slate-900">PL 🇵🇱</option>
                     </select>
                 </div>
@@ -79,19 +73,58 @@
             <button onclick="setCategory('Limited')" class="tab-btn glass px-6 py-3 rounded-2xl text-xs font-bold uppercase whitespace-nowrap text-yellow-400">Limited</button>
             <button onclick="setCategory('Mythical')" class="tab-btn glass px-6 py-3 rounded-2xl text-xs font-bold uppercase whitespace-nowrap text-pink-400">Mythical</button>
             <button onclick="setCategory('Leaderboard')" class="tab-btn glass px-6 py-3 rounded-2xl text-xs font-bold uppercase whitespace-nowrap text-blue-400">Leaderboard</button>
+            <button onclick="setCategory('Informations')" class="tab-btn glass px-6 py-3 rounded-2xl text-xs font-bold uppercase whitespace-nowrap text-orange-400 border-orange-500/30">Informations</button>
         </div>
         <a href="https://discord.gg/abFueQHerJ" target="_blank" class="bg-[#5865F2] hover:bg-[#4752C4] px-6 py-3 rounded-2xl text-xs font-bold uppercase transition shadow-lg shadow-blue-500/20">Discord</a>
     </nav>
 
     <main class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <div id="petGrid" class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+        <div class="lg:col-span-3">
+            <div id="infoPanel" class="hidden space-y-6 animate-fadeIn">
+                <div class="glass p-8 rounded-3xl border-l-4 border-orange-500 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+                    
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                        <div>
+                            <h2 id="infoTitle" class="orbitron text-2xl font-bold text-orange-400 uppercase italic tracking-wider">Guide & Terms</h2>
+                            <p id="infoSubtitle" class="text-[10px] text-slate-500 uppercase font-bold tracking-[0.2em]">Learn how to trade like a pro</p>
+                        </div>
+                        <div class="bg-orange-500/10 border border-orange-500/20 px-4 py-2 rounded-xl">
+                            <p class="text-[9px] text-orange-500 uppercase font-bold mb-1 opacity-60">Last Update</p>
+                            <p class="text-xs font-bold text-orange-400 orbitron">Dec 26, 2025 | 5:15 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                            <h3 id="term1Title" class="text-blue-400 font-bold mb-3 uppercase text-sm italic flex items-center gap-2"></h3>
+                            <p id="term1Desc" class="text-xs text-slate-300 leading-relaxed"></p>
+                        </div>
+                        <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                            <h3 id="term2Title" class="text-blue-400 font-bold mb-3 uppercase text-sm italic flex items-center gap-2"></h3>
+                            <p id="term2Desc" class="text-xs text-slate-300 leading-relaxed"></p>
+                        </div>
+                        <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                            <h3 id="term3Title" class="text-blue-400 font-bold mb-3 uppercase text-sm italic flex items-center gap-2"></h3>
+                            <p id="term3Desc" class="text-xs text-slate-300 leading-relaxed"></p>
+                        </div>
+                        <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                            <h3 id="term4Title" class="text-blue-400 font-bold mb-3 uppercase text-sm italic flex items-center gap-2"></h3>
+                            <p id="term4Desc" class="text-xs text-slate-300 leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="petGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6"></div>
+        </div>
         
         <aside class="lg:col-span-1">
             <div id="calculator" class="glass rounded-3xl p-5 sticky top-8 border-b-4 border-blue-500 shadow-2xl">
                 <h2 data-t="calcTitle" class="orbitron text-center text-sm font-bold mb-4 tracking-widest text-blue-400 italic uppercase">Trade Calculator</h2>
                 
-                <div class="mb-4">
-                    <label data-t="addSideLabel" class="text-[9px] uppercase font-bold text-slate-500 block mb-1 text-center italic">Add pets to side:</label>
+                <div class="mb-4 text-center">
+                    <label data-t="addSideLabel" class="text-[9px] uppercase font-bold text-slate-500 block mb-1 italic">Add pets to side:</label>
                     <select id="sideSwitch" class="w-full bg-slate-950 border border-blue-500/30 rounded-xl p-3 text-xs font-bold outline-none ring-1 ring-blue-500/20 text-white">
                         <option value="them" data-t="sideThem">Their Offer (Left)</option>
                         <option value="you" data-t="sideYou">Your Offer (Right)</option>
@@ -101,12 +134,12 @@
                 <div class="grid grid-cols-2 gap-3 mb-4">
                     <div class="bg-red-500/5 rounded-2xl p-2 border border-red-500/10 text-center">
                         <p data-t="labelThem" class="text-[9px] font-bold uppercase text-red-500 mb-2">Them</p>
-                        <div id="theirList" class="space-y-2 min-h-[80px] max-h-[250px] overflow-y-auto no-scrollbar text-white text-left"></div>
+                        <div id="theirList" class="space-y-2 min-h-[80px] max-h-[250px] overflow-y-auto no-scrollbar"></div>
                         <div class="mt-2 font-bold text-xs" id="theirTotal">0</div>
                     </div>
                     <div class="bg-green-500/5 rounded-2xl p-2 border border-green-500/10 text-center">
                         <p data-t="labelYou" class="text-[9px] font-bold uppercase text-green-500 mb-2">You</p>
-                        <div id="yourList" class="space-y-2 min-h-[80px] max-h-[250px] overflow-y-auto no-scrollbar text-white text-left"></div>
+                        <div id="yourList" class="space-y-2 min-h-[80px] max-h-[250px] overflow-y-auto no-scrollbar"></div>
                         <div class="mt-2 font-bold text-xs" id="yourTotal">0</div>
                     </div>
                 </div>
@@ -120,6 +153,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
