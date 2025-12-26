@@ -60,7 +60,7 @@ const INITIAL_DATA = [
     { name: "Divine Celestia", category: "Leaderboard", demand: "Very High 10/10", val: "12,000", valG: "50,000", valR: "52,000", img: "images/Divine Celestia.png", updated: "12/26/2025" },
     { name: "Divine Dragon", category: "Secrets", demand: "Low 3/10", val: "30", valG: "75", valR: "90", img: "images/Divine Dragon.png", updated: "12/26/2025" },
     { name: "Frost Queen", category: "Secrets", demand: "Low 4/10", val: "65", valG: "85", valR: "100", img: "images/Frost Queen.png", updated: "12/26/2025" },
-    { name: "Frosty Snowman", category: "Limited", demand: "Very High 9/10", val: "180", valG: "700", valR: "810", img: "images/Frosty Snowman.png", updated: "12/26/2025" },
+    { name: "Frosty Snowman", category: "Limited", demand: "Very High 9/10", val: "95", valG: "450", valR: "550", img: "images/Frosty Snowman.png", updated: "12/26/2025" },
     { name: "Gingerbread Dragon", category: "Percentage", demand: "Low 4/10", val: "2", valG: "4", valR: "7.5", img: "images/Gingerbread Dragon.png", updated: "12/26/2025" },
     { name: "Kairos", category: "Percentage", demand: "Medium 6/10", val: "115", valG: "180", valR: "240", img: "images/Kairos.png", updated: "12/26/2025" },
     { name: "King Emblazed", category: "Mythical", demand: "Very Low 1/10", val: "0.1", valG: "0.2", valR: "0.3", img: "images/King Emblazed.png", updated: "12/26/2025" },
@@ -229,3 +229,4 @@ document.addEventListener('DOMContentLoaded', () => {
     updateStaticTexts();
     render();
 });
+
