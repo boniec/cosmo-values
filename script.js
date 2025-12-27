@@ -45,6 +45,7 @@ const INITIAL_DATA = [
     { name: "Frosty Snowman", category: "Limited", demand: "High 7/10", val: "95", valG: "450", valR: "550", img: "images/Frosty Snowman.png", updated: "12/26/2025" },
     { name: "Gingerbread Dragon", category: "Percentage", demand: "Low 4/10", val: "2", valG: "4", valR: "7.5", img: "images/Gingerbread Dragon.png", updated: "12/26/2025" },
     { name: "Kairos", category: "Percentage", demand: "Medium 6/10", val: "115", valG: "180", valR: "240", img: "images/Kairos.png", updated: "12/26/2025" },
+    { name: "Celestial Candycane", category: "Percentage", demand: "High 8/10", val: "1,000", valG: "O/C", valR: "O/C", img: "images/Krampus.png", updated: "12/26/2025" },
     { name: "King Emblazed", category: "Mythical", demand: "Very Low 1/10", val: "0.1", valG: "0.2", valR: "0.3", img: "images/King Emblazed.png", updated: "12/26/2025" },
     { name: "King Kraken", category: "Secrets", demand: "Medium 6/10", val: "400", valG: "2,250", valR: "2,450", img: "images/King Kraken.png", updated: "12/26/2025" },
     { name: "Magmasaur", category: "Secrets", demand: "Low 4/10", val: "50", valG: "95", valR: "125", img: "images/Magmasaur.png", updated: "12/26/2025" },
@@ -159,6 +160,7 @@ function updateCalc() {
 } 
 
 document.addEventListener('DOMContentLoaded', () => { updateStaticTexts(); render(); });
+
 
 
 
