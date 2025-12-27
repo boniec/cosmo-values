@@ -24,18 +24,18 @@ const translations = {
 };
 
 const INITIAL_DATA = [
-    { name: "Krampus", category: "Percentage", demand: "High 8/10", val: "2,300", valG: "7,500", valR: "8,000", img: "images/Krampus.png", updated: "12/26/2025" },
+    { name: "Krampus", category: "Percentage", demand: "High 8/10", val: "2,000", valG: "7,000", valR: "7,500", img: "images/Krampus.png", updated: "12/26/2025" },
     { name: "Evil Snowman", category: "Percentage", demand: "High 8/10", val: "120", valG: "550", valR: "700", img: "images/Evil Snowman.png", updated: "12/26/2025" },
-    { name: "Gilded Seraphim", category: "Secrets", demand: "Very High 9/10", val: "1,350", valG: "O/C", valR: "O/C", img: "images/Gilded Seraphim.png", updated: "12/26/2025" },
+    { name: "Gilded Seraphim", category: "Secrets", demand: "Very High 9/10", val: "950", valG: "O/C", valR: "O/C", img: "images/Gilded Seraphim.png", updated: "12/26/2025" },
     { name: "Ornament", category: "Legendary", demand: "High 8/10", val: "0.2", valG: "0.4", valR: "0.7", img: "images/Ornament.png", updated: "12/26/2025" },
-    { name: "Nutcracker", category: "Mythical", demand: "Very Low 3/10", val: "1", valG: "2.5", valR: "5", img: "images/Nutcracker.png", updated: "12/26/2025" },
+    { name: "Nutcracker", category: "Mythical", demand: "Very Low 3/10", val: "1", valG: "1.5", valR: "3", img: "images/Nutcracker.png", updated: "12/26/2025" },
     { name: "Frost Spirit", category: "Secrets", demand: "High 8/10", val: "75", valG: "180", valR: "215", img: "images/Frost Spirit.png", updated: "12/26/2025" },
     { name: "Christmas Tree", category: "Secrets", demand: "High 8/10", val: "165", valG: "355", valR: "400", img: "images/Christmas Tree.png", updated: "12/26/2025" },
-    { name: "Sharkie", category: "Mythical", demand: "Very Low 3/10", val: "1", valG: "2.5", valR: "5", img: "images/Sharkie.png", updated: "12/26/2025" },
+    { name: "Sharkie", category: "Mythical", demand: "Very Low 3/10", val: "1", valG: "1.5", valR: "3", img: "images/Sharkie.png", updated: "12/26/2025" },
     { name: "5m Frost Monarch", category: "Limited", demand: "Medium 5/10", val: "1,350", valG: "4,900", valR: "5,100", img: "images/5m Frost Monarch.png", updated: "12/26/2025" },
     { name: "5m North Star", category: "Limited", demand: "Low 4/10", val: "200", valG: "450", valR: "550", img: "images/5m North Star.png", updated: "12/26/2025" },
     { name: "Archangel", category: "Mythical", demand: "Very Low 0/10", val: "1", valG: "2", valR: "4", img: "images/Archangel.png", updated: "12/25/2025" },
-    { name: "BubbleGum Chaos", category: "Mythical", demand: "Very Low 2/10", val: "0.1", valG: "0.2", valR: "0.5", img: "images/BubbleGum Chaos.png", updated: "12/25/2025" },
+    { name: "BubbleGum Chaos", category: "Mythical", demand: "Very Low 2/10", val: "0.1", valG: "0.15", valR: "0.3", img: "images/BubbleGum Chaos.png", updated: "12/25/2025" },
     { name: "Candy God", category: "Secrets", demand: "Low 3/10", val: "55", valG: "125", valR: "220", img: "images/Candy God.png", updated: "12/26/2025" },
     { name: "Chocolate Marauder", category: "Secrets", demand: "Low 3/10", val: "340", valG: "560", valR: "780", img: "images/Chocolate Marauder.png", updated: "12/26/2025" },
     { name: "Chronos", category: "Percentage", demand: "High 8/10", val: "9,500", valG: "32,500", valR: "35,000", img: "images/Chronos.png", updated: "12/26/2025" },
@@ -159,4 +159,5 @@ function updateCalc() {
 } 
 
 document.addEventListener('DOMContentLoaded', () => { updateStaticTexts(); render(); });
+
 
