@@ -24,13 +24,13 @@ const translations = {
 };
 
 const INITIAL_DATA = [
-    { name: "Krampus", category: "Percentage", demand: "High 8/10", val: "1,000", valG: "2,000", valR: "2,500", img: "images/Krampus.png", updated: "12/26/2025" },
+    { name: "Krampus", category: "Percentage", demand: "High 8/10", val: "1,300", valG: "2,000", valR: "2,200", img: "images/Krampus.png", updated: "12/27/2025" },
     { name: "Evil Snowman", category: "Percentage", demand: "High 8/10", val: "60", valG: "260", valR: "350", img: "images/Evil Snowman.png", updated: "12/26/2025" },
-    { name: "Gilded Seraphim", category: "Secrets", demand: "Very High 9/10", val: "720", valG: "O/C", valR: "O/C", img: "images/Gilded Seraphim.png", updated: "12/26/2025" },
+    { name: "Gilded Seraphim", category: "Secrets", demand: "Very High 9/10", val: "720", valG: "O/C", valR: "O/C", img: "images/Gilded Seraphim.png", updated: "12/27/2025" },
     { name: "Ornament", category: "Legendary", demand: "High 8/10", val: "0.2", valG: "0.4", valR: "0.5", img: "images/Ornament.png", updated: "12/26/2025" },
     { name: "Nutcracker", category: "Mythical", demand: "Very Low 3/10", val: "1", valG: "1.5", valR: "3", img: "images/Nutcracker.png", updated: "12/27/2025" },
     { name: "Frost Spirit", category: "Secrets", demand: "High 8/10", val: "75", valG: "180", valR: "215", img: "images/Frost Spirit.png", updated: "12/26/2025" },
-    { name: "Christmas Tree", category: "Secrets", demand: "High 8/10", val: "165", valG: "275", valR: "325", img: "images/Christmas Tree.png", updated: "12/26/2025" },
+    { name: "Christmas Tree", category: "Secrets", demand: "High 8/10", val: "165", valG: "275", valR: "325", img: "images/Christmas Tree.png", updated: "12/27/2025" },
     { name: "Sharkie", category: "Mythical", demand: "Very Low 3/10", val: "1", valG: "1.5", valR: "3", img: "images/Sharkie.png", updated: "12/27/2025" },
     { name: "5m Frost Monarch", category: "Limited", demand: "Medium 5/10", val: "1,150", valG: "3,900", valR: "4,100", img: "images/5m Frost Monarch.png", updated: "12/26/2025" },
     { name: "5m North Star", category: "Limited", demand: "Low 4/10", val: "180", valG: "450", valR: "550", img: "images/5m North Star.png", updated: "12/26/2025" },
@@ -45,20 +45,20 @@ const INITIAL_DATA = [
     { name: "Frosty Snowman", category: "Limited", demand: "High 7/10", val: "95", valG: "450", valR: "550", img: "images/Frosty Snowman.png", updated: "12/26/2025" },
     { name: "Gingerbread Dragon", category: "Percentage", demand: "Low 4/10", val: "0.5", valG: "1", valR: "2", img: "images/Gingerbread Dragon.png", updated: "12/26/2025" },
     { name: "Kairos", category: "Percentage", demand: "Medium 6/10", val: "55", valG: "85", valR: "115", img: "images/Kairos.png", updated: "12/26/2025" },
-    { name: "Celestial Candycane", category: "Percentage", demand: "High 8/10", val: "800", valG: "O/C", valR: "O/C", img: "images/Krampus.png", updated: "12/26/2025" },
+    { name: "Celestial Candycane", category: "Percentage", demand: "High 8/10", val: "800", valG: "O/C", valR: "O/C", img: "images/Krampus.png", updated: "12/27/2025" },
     { name: "King Emblazed", category: "Mythical", demand: "Very Low 1/10", val: "0.1", valG: "0.2", valR: "0.3", img: "images/King Emblazed.png", updated: "12/26/2025" },
     { name: "King Kraken", category: "Secrets", demand: "Medium 6/10", val: "350", valG: "1,850", valR: "2,050", img: "images/King Kraken.png", updated: "12/26/2025" },
     { name: "Magmasaur", category: "Secrets", demand: "Low 4/10", val: "50", valG: "95", valR: "125", img: "images/Magmasaur.png", updated: "12/26/2025" },
     { name: "Orca Dominator", category: "Secrets", demand: "Low 4/10", val: "55", valG: "150", valR: "165", img: "images/Orca Dominator.png", updated: "12/26/2025" },
-    { name: "Paradox", category: "Percentage", demand: "High 7/10", val: "130", valG: "320", valR: "400", img: "images/Paradox.png", updated: "12/26/2025" },
+    { name: "Paradox", category: "Percentage", demand: "High 7/10", val: "130", valG: "320", valR: "400", img: "images/Paradox.png", updated: "12/27/2025" },
     { name: "Raging Claw", category: "Secrets", demand: "Very Low 2/10", val: "70", valG: "230", valR: "270", img: "images/Raging Claw.png", updated: "12/26/2025" },
-    { name: "Hooded Krampus", category: "Percentage", demand: "High 7/10", val: "440", valG: "O/C", valR: "O/C", img: "images/Hooded Krampus.png", updated: "12/27/2025" },
+    { name: "Hooded Krampus", category: "Percentage", demand: "High 7/10", val: "340", valG: "O/C", valR: "O/C", img: "images/Hooded Krampus.png", updated: "12/27/2025" },
     { name: "Sakura Dominator", category: "Secrets", demand: "Low 3/10", val: "75", valG: "170", valR: "200", img: "images/Sakura Dominator.png", updated: "12/26/2025" },
     { name: "Sakura Queen", category: "Mythical", demand: "Very Low 0/10", val: "0.1", valG: "0.25", valR: "0.3", img: "images/Sakura Queen.png", updated: "12/26/2025" },
     { name: "Samureye", category: "Mythical", demand: "Very Low 0/10", val: "0.1", valG: "0.2", valR: "0.25", img: "images/Samureye.png", updated: "12/26/2025" },
-    { name: "Silver Emperor", category: "Leaderboard", demand: "Very High 9/10", val: "950", valG: "1,540", valR: "1,960", img: "images/Silver Emperor.png", updated: "12/26/2025" },
-    { name: "Social Dragon", category: "Percentage", demand: "Medium 5/10", val: "14", valG: "55", valR: "85", img: "images/Social Dragon.png", updated: "12/26/2025" },
-    { name: "Trophy Guardian", category: "Leaderboard", demand: "Very High 9/10", val: "500", valG: "1,300", valR: "1,550", img: "images/Trophy Guardian.png", updated: "12/26/2025" },
+    { name: "Silver Emperor", category: "Leaderboard", demand: "Very High 9/10", val: "950", valG: "1,540", valR: "1,960", img: "images/Silver Emperor.png", updated: "12/27/2025" },
+    { name: "Social Dragon", category: "Percentage", demand: "Medium 5/10", val: "16", valG: "55", valR: "85", img: "images/Social Dragon.png", updated: "12/27/2025" },
+    { name: "Trophy Guardian", category: "Leaderboard", demand: "Very High 9/10", val: "500", valG: "1,300", valR: "1,550", img: "images/Trophy Guardian.png", updated: "12/27/2025" },
     { name: "Weeping Angel", category: "Secrets", demand: "Very Low 2/10", val: "45", valG: "95", valR: "115", img: "images/Weeping Angel.png", updated: "12/26/2025" }
 ];
 
@@ -160,6 +160,7 @@ function updateCalc() {
 } 
 
 document.addEventListener('DOMContentLoaded', () => { updateStaticTexts(); render(); });
+
 
 
 
